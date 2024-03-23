@@ -39,8 +39,7 @@ void Parser::Clear() {
 void Parser::ParseFile(std::string Filename) {
     this->Clear();
 
-    std::ifstream f;
-    f.open(Filename);
+    std::ifstream f(Filename);
 
     f >> N;
     this->Allocate();
