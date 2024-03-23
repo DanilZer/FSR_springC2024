@@ -17,12 +17,6 @@ int main() {
     Point* P = TheParser.GetPoints();
     double** M = TheParser.GetMatrix();
 
-    //for(int i=0; i<N; i++) {
-        //for(int j=0; j<N; j++)
-            //std::cout << M[i][j] << "   ";
-        //std::cout << '\n';
-    //}
-
     TheSolver.SetData(N, M);
     TheSolver.Solve();
 
