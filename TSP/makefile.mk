@@ -1,4 +1,4 @@
-all: main.o
+all: main
 
 main: main.o parser.o solver.o
 	g++ main.o parser.o solver.o -o main
