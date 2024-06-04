@@ -14,12 +14,6 @@ int main() {
     Parser TheParser;
     Checker TheChecker;
     TheParser.ParseAlphabet("alphabet.txt");
-    //std::cout << "Размер Алфавита: " << TheParser.GetNalphabet() << std::endl;
-    //std::cout << "Алфавит содержит:" << std::endl;
-    //const auto& alphabet = TheParser.GetAlphabet();
-    //for (const auto& el : alphabet) {
-      //  std::cout << el.first << " " << el.second  << std::endl;
-    //}
     Solver TheSolver(TheParser.GetAlphabet(),TheParser.GetAntiAlphabet());
     TheSolver.encodeFile("example.txt", "ans2.bin",4);
     TheSolver.decodeFile("ans2.bin" , "decodedans2.txt", 4);
